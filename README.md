@@ -1,20 +1,18 @@
-                                .__  .__              
-                         _____  |  | |__| ____  ____  
-                         \__  \ |  | |  |/ ___\/ __ \ 
-                          / __ \|  |_|  \  \__\  ___/ 
-                         (____  /____/__|\___  >___  >
-                              \/             \/    \/ 
+      .__    .__            __  .__                  .__                  .__          
+      |  |__ |__|         _/  |_|  |__   ____   _____|__| ______     ____ |  |   ______
+      |  |  \|  |  ______ \   __\  |  \_/ __ \ /  ___/  |/  ___/   _/ ___\|  |  /  ___/
+      |   Y  \  | /_____/  |  | |   Y  \  ___/ \___ \|  |\___ \    \  \___|  |__\___ \ 
+      |___|  /__|          |__| |___|  /\___  >____  >__/____  > /\ \___  >____/____  >
+           \/                        \/     \/     \/        \/  \/     \/          \/ 
 
-Helga Ingimundardottir's PhD Thesis in *Computational Engineering* : **Adaptive Learning Intelligent Composite rulEs**
+#  Helga Ingimundardottir's PhD Thesis class in XeLaTeX
 
-Institution
- : University of Iceland 
+## Institution
+ : University of Iceland - Háskóli Ísland
 
-Status
- : Work in progress
+## Status
+ : Minimal working example functional 
+ : Real-world-example found at [ALICE-InRu](https://github.com/ALICE-InRu) [thesis-repo](https://github.com/ALICE-InRu/Thesis)
 
-Contact: hei2@hi.is / helga85@gmail.com / @tungufoss
-
-> Note: [Source code](https://github.com/tungufoss/alice.code) and [raw data](https://github.com/tungufoss/alice.data) is contained in their own repo. 
-> Moreover, most figures can be inspected interactively on a [R-shiny server](http://tgax89.rhi.hi.is:3838/alice/)
-
+## Contact
+hei2@hi.is / helga85@gmail.com / @tungufoss
