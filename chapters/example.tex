@@ -2,49 +2,136 @@
 
 \chapter{Something different }
 
-\newthought{There's something to be said} for having a good opening line. Morbi commodo, ipsum sed pharetra gravida, orci  $x = 1/\alpha$ magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis. Nam magna enim, accumsan eu, blandit sed, blandit a, eros.
-$$\zeta = \frac{1039}{\pi}$$
-For an example of a full page figure, see Fig.~\ref{fig:myFullPageFigure}.
+\FirstSentence{O}{ff with their head!} \lipsum[1]
+\begin{equation}
+    \zeta = \frac{1039}{\pi}
+\end{equation}
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis. Nam magna enim, accumsan eu, blandit sed, blandit a, eros.
+\section{Cleverref}
+For an example of a full page figure, see \cref{fig:myFullPageFigure}. 
+\Cref{fig:teaparty} on the other hand is a smaller figure, inline with text. 
+The \texttt{cleverref} package is very convenient, as it uses the same 
+formatting throughout, i.e., not \emph{Figure} vs. \emph{figure} 
+inconsistencies. You can also refer to your papers, e.g. 
+\cref{InRu11a}\footnote{Update \texttt{endmatter/papers.tex},
+    \texttt{frontmatter/papers.tex} and \texttt{papers/papers.bib} to your 
+    publications.},  
+with their roman numeral. Always calling \texttt{$\backslash$cref}.
 
-\begin{table}
-	\[\begin{array}{cc} 1 & 3 \\ 2 & 4 \end{array}\]
-	\caption{bla}
-\end{table}
-
-Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis. Donec eget sem sit amet ligula viverra gravida. Etiam vehicula urna vel turpis. Suspendisse sagittis ante a urna. Morbi a est quis orci consequat rutrum. Nullam egestas feugiat felis. Integer adipiscing semper ligula. Nunc molestie, nisl sit amet cursus convallis, sapien lectus pretium metus, vitae pretium enim wisi id lectus. Donec vestibulum. Etiam vel nibh. Nulla facilisi. Mauris pharetra. Donec augue. Fusce ultrices, neque id dignissim ultrices, tellus mauris dictum elit, vel lacinia enim metus eu nunc.
+\lipsum[3]
 
 \section{First Paragraph}
 And now I begin my first chapter here ...
 
-Here is an equation\footnote{the notation is explained in the nomenclature section :-)}:
+Here is an equation\footnote{the notation is explained in the nomenclature 
+section}:
 \begin{eqnarray}
 	CIF: \hspace*{5mm}F_0^j(a) &=& \frac{1}{2\pi \iota} \oint_{\gamma} \frac{F_0^j(z)}{z - a} dz
 \end{eqnarray}
-\nomenclature[zcif]{$CIF$}{Cauchy's Integral Formula}                  % first letter Z is for Acronyms 
-\nomenclature[aF]{$F$}{complex function}                               % first letter A is for Roman symbols
-\nomenclature[gp]{$\pi$}{ $\simeq 3.14\ldots$}                         % first letter G is for Greek Symbols
-\nomenclature[gi]{$\iota$}{unit imaginary number $\sqrt{-1}$}          % first letter G is for Greek Symbols
-\nomenclature[gg]{$\gamma$}{a simply closed curve on a complex plane}  % first letter G is for Greek Symbols
-\nomenclature[xi]{$\oint_\gamma$}{integration around a curve $\gamma$} % first letter X is for Other Symbols
-\nomenclature[rj]{$j$}{superscript index}                              % first letter R is for superscripts
-\nomenclature[s0]{$0$}{subscript index}                                % first letter S is for subscripts
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis.
+\lipsum[4-6]
+\lipsum[4-6]
 
-\begin{figure}  
-	\includegraphics[width=\textwidth]{figures/fig1}
-	\caption[Short figure name.]{This is a figure that floats inline and here is its caption.
-		\label{fig:myInlineFigure}}
+\section{Mad Hatter's Tea Party}
+There are many examples of Job-Shop Scheduling Problem (JSP) for real-world 
+application. 
+However, for demonstration purposes, let's examine a hypothetical problem from 
+the 18th century. 
+Assume we are invited to the Mad Hatter's Tea Party in Wonderland 
+illustrated in \cref{fig:teaparty}. 
+There are four guests attending, namely
+\begin{enumerate*}[label={$J_\arabic*$)}, ref={{$J_\arabic*$}}, 
+    itemjoin*={{, and of course our host }}]
+    \item Alice\label{guest:alice}
+    \item March Hare\label{guest:marchhare}
+    \item Dormouse\label{guest:dormouse}
+    \item Mad Hatter\label{guest:madhatter}
+\end{enumerate*}
+During these festivities, there are several things each member of the party 
+has to perform. They all have to
+\begin{enumerate*}[label={$M_\arabic*$)}]
+    \item have wine or pour tea
+    \item spread butter
+    \item get a haircut
+    \item check the time of the broken watch for themselves
+    \item say what you mean, be it asking a riddle, telling a story, or singing 
+    a song to the group
+\end{enumerate*}
+Our guests are very particular creatures, and would like to do these task in a 
+very specific order, e.g., March Hare insists on doing 
+them in alphabetical order. And each would rather wait than breaking their 
+habit.
+Moreover, they tend to be very absent-minded so each task takes them a 
+different amount of time. 
+Let's assume that their processing times and ordering are given in 
+\cref{tbl:example}. 
+
+\begin{figure}[b!]\centering 
+    \includegraphics[width=0.8\textwidth]{alice-mad-tea-party}
+    \caption[Short figure name.]{The Mad Hatter's Tea Party, from Alice's 
+    Adventures in Wonderland by \citet{alice}. 
+    Illustration by John Tenniel (1820-1914).}\label{fig:teaparty}
+\end{figure}
+
+\input{tables/example}
+
+Unfortunately, Alice can't stay long. She must leave as soon as possible to 
+play croquet with the Red Queen, 
+and she mustn't be late for that very important date. Otherwise, it's off with 
+someone's head! However, Alice, had a proper upbringing and won't leave the 
+table until everyone has finished their tasks. 
+How should the guests go about their tea-party, in order for Alice to be 
+on-time?
+
+The problem faced by Alice and her new friends is in what order should they 
+rotate their tasks between themselves so that they all finish as soon as 
+possible? This can be considered as is a typical four-job and five-machine 
+job-shop, where
+\begin{enumerate*}[label={{}}]
+    \item our guests are the jobs
+    \item their tasks are the machines
+    \item our objective is to minimise the makespan, i.e., when Alice can leave
+\end{enumerate*}
+
+Let's assume we've come to the party, after 10 operations have already been 
+made (i.e. strikeout entries in \cref{tbl:example}), by using the following 
+job sequence,\footnote{In fact this is the sequence resulting from 10 
+    dispatches following the SPT-rule, to be defined shortly.}
+\begin{equation}
+\vec{\chi} = \left\{ \chi_i \right\}_{i=1}^{k-1}
+           = \left\{ J_4,J_2,J_3,J_3,J_1,J_1,J_1,J_1,J_1,J_4 \right\}
+\end{equation}
+hence currently, at step $k=11$, the job-list is 
+$\mathcal{L}^{(k)}=\{J_2,J_3,J_4\}$ indicating the 3 potential\footnote{
+    Alice is quite anxious to leave, so she has already completed everything, 
+    and therefore \ref{guest:alice}$\notin\mathcal{L}^{(11)}$.} 
+jobs (i.e. denoted in bold in \cref{tbl:example}) to be dispatched, i.e., 
+$\chi_k\in\mathcal{L}^{(k)}$.
+
+\Cref{fig:example:midway} illustrates the temporal partial schedule of the 
+dispatching process as a Gantt-chart
+\begin{enumerate*}
+    \item numbers in the boxes represent the job identification $j$
+    \item the width of the box illustrates the processing times for a given job 
+    for a particular machine $M_a$ (on the vertical axis)
+    \item the dashed boxes represent the resulting partial schedule for when a 
+    particular job is scheduled next 
+    \item the current $C_{\max}$ is denoted with a dotted line    
+\end{enumerate*}
+
+\begin{figure}[t] % must but placement, otherwise assumed page of floats
+    \includegraphics[width=\textwidth]{{example.gantt}.pdf}
+    \caption[Gantt chart of a partial JSP schedule]{Gantt chart of a partial 
+        JSP schedule after 10 dispatches: Solid and dashed boxes represent 
+        $\vec{\chi}$ and $\mathcal{L}^{(11)}$, respectively. Current $C_{\max}$ 
+        denoted as dotted line.}
+    \label{fig:example:midway}
 \end{figure}
 
 
-
 \begin{FPfigure}  
-	\includegraphics[width=\textwidth]{figures/fullpage}
+	\includegraphics[width=\textwidth]{alice-cheshire}
 	\caption[Short figure name.]{This is a full page figure using the FPfigure command. It takes up the whole page and the caption appears on the preceding page. Its useful for large figures. Harvard's rules about full page figures are tricky, but you don't have to worry about it because we took care of it for you. For example, the full figure is supposed to have a title in the same style as the caption but without the actual caption. The caption is supposed to appear alone on the preceding page with no other text. You do't have to worry about any of that. We have modified the fltpage package to make it work. This is a lengthy caption and it clearly would not fit on the same page as the figure. Note that you should only use the FPfigure command in instances where the figure really is too large. If the figure is small enough to fit by the caption than it does not produce the desired effect. Good luck with your thesis. I have to keep writing this to make the caption really long. LaTex is a lot of fun. You will enjoy working with it. Good luck on your post doctoral life! I am looking forward to mine. \label{fig:myFullPageFigure}}
 \end{FPfigure}
 
-
-Nulla facilisi. In vel sem. Morbi id urna in diam dignissim feugiat. Proin molestie tortor eu velit. Aliquam erat volutpat. Nullam ultrices, diam tempus vulputate egestas, eros pede varius leo, sed imperdiet lectus est ornare odio. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin consectetuer velit in dui. Phasellus wisi purus, interdum vitae, rutrum accumsan, viverra in, velit. Sed enim risus, congue non, tristique in, commodo eu, metus. Aenean tortor mi, imperdiet id, gravida eu, posuere eu, felis. Mauris sollicitudin, turpis in hendrerit sodales, lectus ipsum pellentesque ligula, sit amet scelerisque urna nibh ut arcu. Aliquam in lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla placerat aliquam wisi. Mauris viverra odio. Quisque fermentum pulvinar odio. Proin posuere est vitae ligula. Etiam euismod. Cras a eros.
+\lipsum[7-9]
