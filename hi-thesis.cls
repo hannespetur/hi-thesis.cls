@@ -186,6 +186,7 @@ tablewithin=chapter]{caption} % gæti haft frekar figurewithin=section
 \makeatother
 
 % ----------------------------------------------------------------- front matter
+\usepackage{nomencl}
 \makeatletter
 \newcommand{\printFrontMatter}[1]{
     \input{frontmatter/coverpage}
@@ -325,16 +326,23 @@ tablewithin=chapter]{caption} % gæti haft frekar figurewithin=section
 }
 
 % ---------------------------------------------------------------ackowledgements
+\makeatletter
 \newcommand{\acknowledgments}{
     \chapter*{Acknowledgements}
     \pagestyle{fancy}
     \rhead{ACKNOWLEDGEMENTS}
     \noindent
     \input{frontmatter/thanks}
+    \begin{flushright}
+        \vfill
+        \@universitycity, \@degreemonth\ \@degreeyear\\ 
+        \@author
+    \end{flushright}
     \vspace*{\fill} 
     \cleardoublepage
     \rhead[\fancyplain{}{\leftmark}]{\fancyplain{}{}}
 }
+\makeatother
 
 % ---------------------------------------------------------- the list of authors
 \newcommand{\authorlist}{
