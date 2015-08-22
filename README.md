@@ -5,14 +5,14 @@
       |___|  /__|          |__| |___|  /\___  >____  >__/____  > /\ \___  >____/____  >
            \/                        \/     \/     \/        \/  \/     \/          \/ 
 
-#  Helga Ingimundardottir's PhD Thesis class in XeLaTeX
+# Helga Ingimundardottir's PhD Thesis Class 
 
 ## Institution
- : University of Iceland - Háskóli Ísland
+University of Iceland - Háskóli Ísland
 
 ## Status
- : Minimal working example functional 
- : Real-world-example found at [ALICE-InRu](https://github.com/ALICE-InRu) [thesis-repo](https://github.com/ALICE-InRu/Thesis)
+Minimal working example functional. Must be compiled with XeLaTeX.
+Real-world-example found at [ALICE-InRu](https://github.com/ALICE-InRu) [thesis-repo](https://github.com/ALICE-InRu/Thesis)
 
 ## Contact
 hei2@hi.is / helga85@gmail.com / @tungufoss
