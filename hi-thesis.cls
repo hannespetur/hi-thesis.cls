@@ -320,7 +320,7 @@ tablewithin=chapter]{caption} % gæti haft frekar figurewithin=section
     \addcontentsline{toc}{chapter}{Listing of Publications}
     \pagestyle{fancy}
     \rhead{LISTING OF PUBLICATIONS}
-    \input{frontmatter/publications}
+    \input{frontmatter/papers}
     \rhead[\fancyplain{}{\leftmark}]{\fancyplain{}{}}
 }
 
